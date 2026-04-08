@@ -1,0 +1,47 @@
+:root {
+    --bg-light: #f8f9fa;
+    --card-shadow: 0 0.5rem 1rem rgba(0,0,0,0.08);
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+    font-family: 'Segoe UI', 'Noto Sans JP', Roboto, system-ui;
+}
+
+.drop-area {
+    border: 2px dashed #6c757d;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.drop-area.drag-over {
+    border-color: #0d6efd;
+    background-color: #e7f1ff;
+}
+
+.btn-group .btn {
+    font-size: 0.85rem;
+}
+
+.progress {
+    height: 2.5rem;
+}
+
+.progress-bar {
+    font-size: 1rem;
+    line-height: 2.5rem;
+}
+
+.card-header {
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    color: #6c757d;
+}
