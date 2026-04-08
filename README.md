@@ -62,7 +62,7 @@
 ### 1. リポジトリのクローン
 
 ```bash
-git clone https://github.com/あなたのユーザー名/pdf-tool-jp.git
+git clone https://github.com/pullead/pdf-tool-jp.git
 cd pdf-tool-jp
 ```
 ### 2. 依存パッケージのインストール
