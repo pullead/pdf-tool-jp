@@ -84,7 +84,8 @@ python backend/app.py
 * Running on http://127.0.0.1:5000
 ```
 ### 4. ブラウザでアクセス 
-http://localhost:5000を開き、ツールを使用します。
+http://localhost:5000
+を開き、ツールを使用します。
 
 ## 📖 使い方
 ### 1.PDFをアップロード
