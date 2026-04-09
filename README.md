@@ -82,6 +82,8 @@ requirements.txt の中身:
 flask==2.3.3
 python-office==1.0.6
 Werkzeug==2.3.7
+PyMuPDF==1.24.0
+Pillow==10.1.0
 ```
 ### 3. アプリケーションの起動
 ```bash
