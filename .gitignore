@@ -1,0 +1,16 @@
+# 仮想環境
+.venv/
+venv/
+env/
+
+# IDE設定
+.idea/
+.vscode/
+
+# Pythonキャッシュ
+__pycache__/
+*.pyc
+
+# 一時ファイル
+temp_*
+*.tmp
