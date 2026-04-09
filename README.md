@@ -62,7 +62,7 @@
 ### 1. リポジトリのクローン
 
 ```bash
-git clone https://github.com/あなたのユーザー名/pdf-tool-jp.git
+git clone https://github.com/pullead/pdf-tool-jp.git
 cd pdf-tool-jp
 ```
 ### 2. 依存パッケージのインストール
@@ -80,8 +80,12 @@ Werkzeug==2.3.7
 python backend/app.py
 ```
 以下のようなメッセージが表示されれば成功です。
+```text
+* Running on http://127.0.0.1:5000
+```
 ### 4. ブラウザでアクセス 
-http://localhost:5000を開き、ツールを使用します。
+http://localhost:5000
+を開き、ツールを使用します。
 
 ## 📖 使い方
 ### 1.PDFをアップロード
