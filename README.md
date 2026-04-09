@@ -37,7 +37,7 @@
 | 機能 | 説明 | 対応メソッド（popdf） |
 |------|------|----------------------|
 | 📄 **PDF → Word** | PDFを編集可能なWord（.docx）に変換 | `pdf2docx` |
-| 🖼️ **PDF → 画像** | 各ページを画像化（PNG/JPEG）。複数画像をZIP圧縮、または長画像に結合 | `pdf2imgs` |
+| 🖼️ **PDF → 画像** | 各ページを画像化（PNG/JPEG）。複数画像をZIP圧縮、または長画像に結合 | `PyMuPDF` |
 | 🔗 **PDF結合** | 複数のPDFファイルを1つにまとめる | `merge2pdf` |
 | ✂️ **PDF分割** | 指定したページ範囲を抽出して新しいPDFを作成 | `split4pdf` |
 | 💧 **テキスト透かし** | 任意の文字列を透かしとして全ページに追加 | `add_text_watermark` |
@@ -179,4 +179,4 @@ python-office ライブラリも同様にMITライセンスです。
 ## 👤 作者
 ⭐GitHubユーザー名: pullead
 
-⭐連絡先: （pullead@gmail.com）
+📧連絡先: （pullead@gmail.com）

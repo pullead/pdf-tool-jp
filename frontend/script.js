@@ -48,6 +48,8 @@ async function uploadFile(file) {
             uploadFilenameSpan.innerText = currentFileName;
             fileInfo.style.display = 'block';
             document.getElementById('merge-btn').disabled = false;
+            // ★ 追加：ファイル入力をクリア（二重アップロード防止）
+            fileInput.value = '';
         } else {
             alert('アップロード失敗: ' + data.error);
         }

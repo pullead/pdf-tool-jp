@@ -42,21 +42,17 @@ def upload_file():
 
 @app.route('/convert', methods=['POST'])
 def convert():
-    """
-    アップロード済みファイルに対して指定された処理（変換・分割・透かし等）を実行します。
-    処理結果のファイルをダウンロード可能な形式で返します。
-    """
     data = request.get_json()
     file_id = data.get('file_id')
     action = data.get('action')
     params = data.get('params', {})
 
     if file_id not in uploaded_files:
-        return jsonify({'error': '無効なfile_idです'}), 400
+        return jsonify({'error': '無効な file_idです'}), 400
 
     file_info = uploaded_files[file_id]
     input_path = file_info['path']
-    output_dir = create_temp_dir()  # 結果格納用の新しい一時ディレクトリ
+    output_dir = create_temp_dir()
 
     try:
         if action == 'to_word':
@@ -74,16 +70,12 @@ def convert():
         else:
             return jsonify({'error': '不明なアクションです'}), 400
 
-        # 処理結果のファイルをクライアントに送信（ダウンロード）
         return send_file(out_path, as_attachment=True,
                          download_name=os.path.basename(out_path))
 
     except Exception as e:
         return jsonify({'error': str(e)}), 500
-    finally:
-        # 元のアップロードファイルの一時ディレクトリをクリーンアップ
-        cleanup_temp_dir(file_info['temp_dir'])
-        del uploaded_files[file_id]
+    # ★ 元のアップロードファイルは削除しない（複数機能で使い回せるようにする）
 
 
 @app.route('/merge', methods=['POST'])
